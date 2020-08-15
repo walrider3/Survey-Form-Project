@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="StyleSheet2.css" media="screen" />
+    <title>Survey Form Project</title>
+</head>
+<body>
+    <div id="container" class="arrange">
+
+    <header id="intro" class="arrange">
+        <h1 id="title">This Is A Survey Form</h1>
+        <p id="description">Thanks For Taking Your Time,<br>So Let's Just Jump Right Into It!</p>
+    </header>
+
+    <div id="le_Sondage">
+
+        <div class="group">
+            <form action="http://localhost" id="survey-form">
+                <label id="name-label" for="name">Name:</label> <br>
+                <input class="input-control" id="name" name="Name" placeholder="Enter Your Full Name" type="text" required /> <br>
+                <label id="email-label" for="email">Email:</label><br>
+                <input class="input-control" id="email" name="Email" placeholder="Enter Your Email" type="email" required /><br>
+                <label id="number-label" for="number">Age:(Optional)</label><br>
+                <input class="input-control" id="number" name="Number" placeholder="Enter Your Age" type="number" min="1" max="110" />
+        </div>
+
+        <div class="group">
+            <p>Would you recommend this service?</p>
+            <select class="input-control" id="dropdown" name="dropdown-menu" required>
+                <option disabled selected>Choose Your Choice</option>
+                <option value="Definately">Definately</option>
+                <option value="Maybe">Maybe</option>
+                <option value="Non">Non</option>
+            </select>
+        </div>
+
+        <div class="group">
+            <p>What is your occupation?</p>
+            <label for="student-opt">
+                <input value="student" type="radio" id="student-opt" name="occupation" />Student
+            </label>
+            <label for="worker-opt">
+
+                <input value="worker" type="radio" id="worker-opt" name="occupation" />Worker
+            </label>
+            <label for="hobbyist-opt">
+                <input value="hobbyist" type="radio" id="hobbyist-opt" name="occupation" checked />Hobbyist
+            </label>
+            </div>
+
+        <div class="group">
+            <p>What Is Your Age Group (je suis aware that asked for your age)</p>
+            <label for="toddler-opt">
+                <input value="toddler" type="checkbox" id="toddler-opt" name="age-group" />Toddler
+            </label>
+            <label for="middle-opt">
+                <input value="middle-aged" type="checkbox" id="middle-opt" name="age-group" />Middle Aged
+            </label>
+            <label for="old-opt">
+                <input value="old" type="checkbox" id="old-opt" name="age-group" />Old
+            </label>
+        </div>
+
+        <div class="group">
+            <label for="add-comments" id="textarea-label">Any more comments you'd like to give?</label>
+            <textarea class="text-area" id="add-comments" name="add-comments" placeholder="Enter here."></textarea>
+        </div>
+
+        <div class="group">
+            <input class="submit-button" type="submit" id="submit" />
+
+        </div>
+        </form>
+
+    </div>
+        </div>
+    
+</body>
+</html>

@@ -1,0 +1,85 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root {
+    --background-color: rgba(55, 59, 168, 0.85);
+    --submit-color: #37af65;
+}
+
+header {
+    text-align: center;
+    margin: 3px;
+}
+
+body {
+    font-family: 'Poppins',sans-serif,"Book Antique";
+    background-image: linear-gradient( 110deg, rgba(55, 59, 168, 0.8), rgba(136, 136, 206, 0.1) ), url(https://images.unsplash.com/photo-1519337265831-281ec6cc8514?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
+    font-size: 22px;
+}
+
+#description {
+    font-style: italic;
+    font-weight: 900;
+    margin-top: -10px;
+}
+
+
+
+.arrange {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+#container {
+    width: 60%;
+    border-radius: 12px;
+    background-color: var(--background-color);
+    padding: 1.25rem;
+}
+
+.form-control {
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+.submit-button {
+    display: block;
+    width: 80%;
+    padding: 0.75rem;
+    cursor: pointer;
+    background-color: var(--submit-color);
+    border: 0;
+    border-radius: 6px;
+    font-size: inherit;
+}
+
+input {
+    margin: 0 auto 1.25rem auto;
+    border: 10px;
+    border-radius: 5px;
+}
+
+    input:focus {
+        border-color: #80bdff;
+    }
+
+.text-area {
+    font-size: inherit;
+    width: 100%;
+    resize: vertical;
+    min-height: 6rem;
+}
+
+.group {
+    display: block;
+    padding: 0.25rem;
+    margin: 0 auto 1.25rem auto;
+}
+
+.input-control {
+    font-size: inherit;
+    width: 60%;
+}
