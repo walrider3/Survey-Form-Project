@@ -83,3 +83,7 @@ input {
     font-size: inherit;
     width: 60%;
 }
+
+.center-text {
+    text-align: center;
+}
